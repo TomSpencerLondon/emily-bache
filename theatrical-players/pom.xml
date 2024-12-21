@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <!-- Parent POM Reference -->
     <parent>
         <groupId>org.example</groupId>
@@ -12,7 +11,7 @@
     </parent>
 
     <groupId>org.example</groupId>
-    <artifactId>parrot</artifactId>
+    <artifactId>theatrical-players</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -20,6 +19,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
 
     <!-- Inherits Java 21 properties from the parent POM -->
     <dependencies>
@@ -36,5 +36,13 @@
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.approvaltests/approvaltests -->
+        <dependency>
+            <groupId>com.approvaltests</groupId>
+            <artifactId>approvaltests</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
     </dependencies>
+
 </project>
